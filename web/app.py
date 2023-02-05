@@ -46,7 +46,7 @@ def forbidden(e):
 
 @app.errorhandler(404)
 def forbidden(e):
-    return send_from_directory('pages/', '404.html'), 403
+    return send_from_directory('pages/', '404.html'), 404
 
 
 if __name__ == "__main__":
